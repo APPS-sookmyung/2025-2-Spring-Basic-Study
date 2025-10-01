@@ -1,10 +1,10 @@
 package com.example.demo;
+import org.springframework.stereotype.Component;
 
 @Component
-
-public class ProductorController {
+public class ProductController {
     // 상품  조회 및 상품 등록
-    productController() {
-        System.out.println("객체 생성 완료");
+    ProductController() {
+        System.out.println("진짜 될까?");
     }
 }
