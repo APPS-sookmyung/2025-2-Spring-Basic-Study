@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ProductRepository {
     @Autowired
+
     private ProductRepository pr;
     public String getProduct(){
         return "노트북!";
