@@ -1,11 +1,9 @@
-package com.example.demo;
+package com.example.demo.product;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
 @Controller
 @ResponseBody
@@ -22,5 +20,10 @@ public class ProductController {
     @RequestMapping(value="", method = RequestMethod.GET)
     public String getProduct(){
         return ps.getProduct();
+    }
+
+    @RequestMapping(value = "/product", method = RequestMethod.POST)
+    public void saveProduct() {
+        ps.saveProduct();
     }
 }
